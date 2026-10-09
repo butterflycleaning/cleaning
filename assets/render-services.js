@@ -27,3 +27,7 @@
   });
   document.querySelectorAll('[data-min]').forEach(el => el.textContent = P.fmt(C.minimum));
 })();
+document.querySelectorAll('[data-marquee]').forEach(el => {
+  const one = window.HIB.services.map(s => `<span>${s.name}</span>`).join('');
+  el.innerHTML = `<div class="track">${one}${one}${one}${one}</div>`;
+});

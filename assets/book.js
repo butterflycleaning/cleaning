@@ -95,7 +95,8 @@
     $('flow').style.display = 'none';
     const venmo = `https://venmo.com/u/${C.business.venmo}`;
     $('done').style.display = 'block';
-    $('done').innerHTML = `<h2>${delivered ? 'Request received!' : 'Almost done — send the email'}</h2>
+    if (window.HIBFX) HIBFX.confetti();
+    $('done').innerHTML = `<svg class="checkmark" viewBox="0 0 84 84" aria-hidden="true"><circle cx="42" cy="42" r="38"/><path pathLength="1" d="M26 43l12 12 21-24"/></svg><h2>${delivered ? 'Request received!' : 'Almost done — send the email'}</h2>
       ${delivered ? `<p>Thanks, ${esc(info.name)}. We'll confirm your booking and final price by email at <b>${esc(info.email)}</b>.</p>`
       : `<p>Your email app should have opened with your booking details. <b>Press Send</b> to submit your request. If nothing opened, email the details to <a href="mailto:${C.business.email}">${C.business.email}</a>.</p>`}
       <div class="callout"><b>Paying</b><br>We accept Venmo: <a href="${venmo}" target="_blank" rel="noopener">@${C.business.venmo}</a>.

@@ -97,7 +97,7 @@ input:focus,select:focus,textarea:focus{outline:3px solid var(--sage-m);border-c
 .summary .disc-row td{color:var(--forest)}
 .progress{display:flex;gap:6px;margin-bottom:22px}
 .progress span{flex:1;height:8px;border-radius:99px;background:var(--line)}
-.progress span.on{background:var(--rose)}
+
 .stepname{font-size:.9rem;color:var(--muted);margin-bottom:6px}
 .step{display:none}.step.active{display:block}
 .nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}

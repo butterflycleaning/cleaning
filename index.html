@@ -4,31 +4,38 @@
 <title>A fresh start for every home · Home in Bloom</title>
 <meta name="description" content="Home in Bloom — residential and commercial cleaning across Massachusetts. Get an instant quote and book online.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/fx.css">
+<script>document.documentElement.classList.add("js")</script>
 </head><body>
 <div id="site-header"></div>
 <main id="main">
-<section class="hero"><div class="wrap">
+<section class="hero"><div class="blobs"><i></i><i></i><i></i></div><div class="wrap">
   <div>
     <span class="eyebrow"><span data-sp></span> Cleaning across Massachusetts</span>
-    <h1>A fresh start for every home.</h1>
+    <h1 data-split>A fresh start for every <em>home.</em></h1>
     <p class="lead">Residential and commercial cleaning, anywhere in Massachusetts. Get an instant estimate and book online in a few minutes.</p>
-    <div class="row"><a class="btn" href="book.html">Book a cleaning</a><a class="btn alt" href="quote.html">Get an instant quote</a></div>
+    <div class="row"><a class="btn pulse" href="book.html">Book a cleaning</a><a class="btn alt" href="quote.html">Get an instant quote</a></div>
     <p class="note" style="margin-top:14px">Minimum job price <span data-min></span>. Pay securely with Venmo.</p>
   </div>
-  <svg class="art" viewBox="0 0 420 380" role="img" aria-label="Illustration of blooming flowers and sparkles">
+  <svg class="art" viewBox="0 0 420 380" role="img" aria-label="Illustration of blooming flowers, sparkles and bubbles">
     <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbe3ea"/><stop offset="1" stop-color="#dcefe0"/></linearGradient></defs>
-    <path d="M60 70c40-60 190-70 270-20s70 150 30 220-170 100-250 50S20 130 60 70z" fill="url(#g)"/>
-    <g stroke="#2d5a47" stroke-width="5" fill="none" stroke-linecap="round"><path d="M210 330V190"/><path d="M130 330c-6-60 6-110 40-140"/><path d="M290 330c6-50-4-90-34-120"/></g>
-    <path d="M210 270c-40-6-60-30-64-56 36-2 60 18 64 56zM210 250c36-6 56-26 60-52-34 0-56 16-60 52z" fill="#9fcfae"/>
-    <g transform="translate(150 70) scale(1.3)"><ellipse cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba" transform="rotate(72 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba" transform="rotate(144 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba" transform="rotate(216 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba" transform="rotate(288 50 50)"/><circle cx="50" cy="50" r="11" fill="#f6d36b"/></g>
-    <g transform="translate(70 130) scale(.8)"><ellipse cx="50" cy="26" rx="14" ry="22" fill="#e8799c"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#e8799c" transform="rotate(72 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#e8799c" transform="rotate(144 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#e8799c" transform="rotate(216 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#e8799c" transform="rotate(288 50 50)"/><circle cx="50" cy="50" r="11" fill="#f6d36b"/></g>
-    <g transform="translate(260 120) scale(.9)"><ellipse cx="50" cy="26" rx="14" ry="22" fill="#fff"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#fff" transform="rotate(72 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#fff" transform="rotate(144 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#fff" transform="rotate(216 50 50)"/><ellipse cx="50" cy="26" rx="14" ry="22" fill="#fff" transform="rotate(288 50 50)"/><circle cx="50" cy="50" r="11" fill="#f6d36b"/></g>
-    <g fill="#d9577f"><path transform="translate(330 40) scale(1.5)" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/>
-    <path transform="translate(40 40) scale(1)" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/>
-    <path transform="translate(350 230) scale(.8)" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g>
+    <path class="blob" d="M60 70c40-60 190-70 270-20s70 150 30 220-170 100-250 50S20 130 60 70z" fill="url(#g)"/>
+    <g stroke="#2d5a47" stroke-width="5" fill="none" stroke-linecap="round">
+      <path class="stem" pathLength="1" style="--d:.3s" d="M210 330C210 280 214 240 215 196"/>
+      <path class="stem" pathLength="1" style="--d:.5s" d="M130 330C128 280 112 250 110 208"/>
+      <path class="stem" pathLength="1" style="--d:.7s" d="M290 330C292 290 304 250 305 210"/></g>
+    <path class="leaf" style="--d:.9s" d="M212 285c-40-6-60-30-64-56 36-2 60 18 64 56z" fill="#9fcfae"/>
+    <path class="leaf r" style="--d:1.05s" d="M213 260c36-6 56-26 60-52-34 0-56 16-60 52z" fill="#9fcfae"/>
+    <path class="leaf" style="--d:1.2s" d="M129 296c-22-2-34-16-36-30 20 0 34 10 36 30z" fill="#bfe3c9"/>
+    <path class="leaf r" style="--d:1.3s" d="M291 292c22-2 34-16 36-30-20 0-34 10-36 30z" fill="#bfe3c9"/>
+    <g transform="translate(150 70) scale(1.3)"><g class="flower" style="--d:1.0s"><g transform="rotate(0 50 50)"><ellipse class="petal" style="--i:0" cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba"/></g><g transform="rotate(72 50 50)"><ellipse class="petal" style="--i:1" cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba"/></g><g transform="rotate(144 50 50)"><ellipse class="petal" style="--i:2" cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba"/></g><g transform="rotate(216 50 50)"><ellipse class="petal" style="--i:3" cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba"/></g><g transform="rotate(288 50 50)"><ellipse class="petal" style="--i:4" cx="50" cy="26" rx="14" ry="22" fill="#f2a1ba"/></g><circle class="ctr" cx="50" cy="50" r="11" fill="#f6d36b"/></g></g>
+    <g transform="translate(70 130) scale(0.8)"><g class="flower" style="--d:1.35s"><g transform="rotate(0 50 50)"><ellipse class="petal" style="--i:0" cx="50" cy="26" rx="14" ry="22" fill="#e8799c"/></g><g transform="rotate(72 50 50)"><ellipse class="petal" style="--i:1" cx="50" cy="26" rx="14" ry="22" fill="#e8799c"/></g><g transform="rotate(144 50 50)"><ellipse class="petal" style="--i:2" cx="50" cy="26" rx="14" ry="22" fill="#e8799c"/></g><g transform="rotate(216 50 50)"><ellipse class="petal" style="--i:3" cx="50" cy="26" rx="14" ry="22" fill="#e8799c"/></g><g transform="rotate(288 50 50)"><ellipse class="petal" style="--i:4" cx="50" cy="26" rx="14" ry="22" fill="#e8799c"/></g><circle class="ctr" cx="50" cy="50" r="11" fill="#f6d36b"/></g></g>
+    <g transform="translate(260 120) scale(0.9)"><g class="flower" style="--d:1.6s"><g transform="rotate(0 50 50)"><ellipse class="petal" style="--i:0" cx="50" cy="26" rx="14" ry="22" fill="#ffffff"/></g><g transform="rotate(72 50 50)"><ellipse class="petal" style="--i:1" cx="50" cy="26" rx="14" ry="22" fill="#ffffff"/></g><g transform="rotate(144 50 50)"><ellipse class="petal" style="--i:2" cx="50" cy="26" rx="14" ry="22" fill="#ffffff"/></g><g transform="rotate(216 50 50)"><ellipse class="petal" style="--i:3" cx="50" cy="26" rx="14" ry="22" fill="#ffffff"/></g><g transform="rotate(288 50 50)"><ellipse class="petal" style="--i:4" cx="50" cy="26" rx="14" ry="22" fill="#ffffff"/></g><circle class="ctr" cx="50" cy="50" r="11" fill="#f6d36b"/></g></g>
+    <g transform="translate(330 40) scale(1.5)"><path class="tw" style="--t:0s" fill="#d9577f" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g><g transform="translate(40 40) scale(1)"><path class="tw" style="--t:0.7s" fill="#d9577f" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g><g transform="translate(350 230) scale(0.8)"><path class="tw" style="--t:1.4s" fill="#d9577f" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g><g transform="translate(110 300) scale(0.7)"><path class="tw" style="--t:0.35s" fill="#d9577f" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g><g transform="translate(200 20) scale(0.6)"><path class="tw" style="--t:1.1s" fill="#d9577f" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g><g transform="translate(385 140) scale(0.7)"><path class="tw" style="--t:1.9s" fill="#d9577f" d="M12 0c.8 6.2 3.5 9.3 12 12-8.5 2.7-11.2 5.8-12 12-.8-6.2-3.5-9.3-12-12 8.5-2.7 11.2-5.8 12-12z"/></g>
+    <circle class="bub" style="--t:0s" cx="60" cy="320" r="7" fill="rgba(255,255,255,.55)" stroke="#fff" stroke-width="1.5"/><circle class="bub" style="--t:2s" cx="330" cy="330" r="5" fill="rgba(255,255,255,.55)" stroke="#fff" stroke-width="1.5"/><circle class="bub" style="--t:3.5s" cx="380" cy="300" r="9" fill="rgba(255,255,255,.55)" stroke="#fff" stroke-width="1.5"/><circle class="bub" style="--t:5s" cx="30" cy="260" r="4" fill="rgba(255,255,255,.55)" stroke="#fff" stroke-width="1.5"/><circle class="bub" style="--t:1.2s" cx="250" cy="340" r="6" fill="rgba(255,255,255,.55)" stroke="#fff" stroke-width="1.5"/>
   </svg>
-</div></section>
+</div><div class="wave bottom" style="--c:var(--cream)" aria-hidden="true"><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 40C180 0 360 80 540 40S900 0 1080 40S1260 80 1440 40V80H0Z M1440 40C1620 0 1800 80 1980 40S2340 0 2520 40S2700 80 2880 40V80H1440Z"/></svg><svg viewBox="0 0 2880 80" preserveAspectRatio="none"><path d="M0 52C120 78 360 18 540 52S900 78 1080 52S1260 18 1440 52C1560 78 1800 18 1980 52S2340 78 2520 52S2700 18 2880 52V80H0Z"/></svg></div></section>
+<div class="marquee" data-marquee aria-hidden="true"></div>
 
 <section><div class="wrap">
   <span class="eyebrow">How it works</span><h2>Booked in three simple steps</h2>
@@ -77,4 +84,5 @@
   const esc=v=>String(v).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
   document.getElementById("reviews").innerHTML=C.reviews.map(r=>`<figure class="card" style="margin:0"><blockquote>“${esc(r.quote)}”</blockquote><figcaption class="note" style="margin-top:10px">— ${esc(r.name)}${r.detail?", "+esc(r.detail):""}</figcaption></figure>`).join("");}
 })();</script>
+<script src="assets/fx.js"></script>
 </body></html>

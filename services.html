@@ -4,7 +4,8 @@
 <title>Services · Home in Bloom</title>
 <meta name="description" content="Residential and commercial cleaning services in Massachusetts: standard, deep, move in/out, post-construction, Airbnb turnover, office and window cleaning.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="assets/fx.css">
+<script>document.documentElement.classList.add("js")</script>
 </head><body>
 <div id="site-header"></div>
 <main id="main"><section><div class="wrap">
@@ -19,4 +20,5 @@
 <script src="assets/config.js"></script><script src="assets/pricing.js"></script><script src="assets/layout.js"></script>
 <script src="assets/render-services.js"></script>
 <script>document.getElementById("extrasList").textContent=HIB.extras.map(x=>x.label+" ("+HIBPricing.fmt(x.price)+(x.qty?" each":"")+")").join(" · ");</script>
+<script src="assets/fx.js"></script>
 </body></html>

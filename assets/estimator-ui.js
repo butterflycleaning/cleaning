@@ -43,8 +43,12 @@
     let rows = e.lines.map(l => `<tr><td>${l.label}</td><td>${P.fmt(l.amount)}</td></tr>`).join('');
     if (e.minApplied) rows += `<tr><td>Minimum job price applied</td><td>${P.fmt(e.subtotal)}</td></tr>`;
     if (e.discount) rows += `<tr class="disc-row"><td>${C.recurring[s.freq].label} discount</td><td>−${P.fmt(e.discount)}</td></tr>`;
-    box.innerHTML = `<h3>Your estimate</h3><table>${rows}<tr class="total"><td>Estimated total</td><td>${P.fmt(e.total)}</td></tr></table>
+    box.innerHTML = `<h3>Your estimate</h3><table>${rows}<tr class="total"><td>Estimated total</td><td><span class="amt">${P.fmt(e.total)}</span></td></tr></table>
       <p class="note" style="margin-top:12px">Estimate only. We confirm your final price by email before your visit. Minimum job price is ${P.fmt(C.minimum)}.</p>`;
+    const amt = box.querySelector('.amt');
+    if (amt && box.dataset.last && box.dataset.last !== String(e.total) && amt.animate)
+      amt.animate([{ transform: 'scale(1.35)', color: '#d9577f' }, { transform: 'scale(1)' }], { duration: 450, easing: 'cubic-bezier(.3,1.8,.5,1)' });
+    box.dataset.last = String(e.total);
     return e;
   }
 
