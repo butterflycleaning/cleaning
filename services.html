@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Services · Home in Bloom</title>
+<meta name="description" content="Residential and commercial cleaning services in Massachusetts: standard, deep, move in/out, post-construction, Airbnb turnover, office and window cleaning.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div id="site-header"></div>
+<main id="main"><section><div class="wrap">
+  <span class="eyebrow">Services</span><h1>What we clean</h1>
+  <p class="lead">Every job has a <span data-min></span> minimum. Example prices below are estimates; use the quote calculator for your exact space.</p>
+  <div data-services="full"></div>
+  <div class="card" style="margin-top:36px"><h3>Add-ons for home cleans</h3>
+    <p class="note" id="extrasList"></p>
+    <a class="btn" href="quote.html">Get an instant quote</a></div>
+</div></section></main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script><script src="assets/pricing.js"></script><script src="assets/layout.js"></script>
+<script src="assets/render-services.js"></script>
+<script>document.getElementById("extrasList").textContent=HIB.extras.map(x=>x.label+" ("+HIBPricing.fmt(x.price)+(x.qty?" each":"")+")").join(" · ");</script>
+</body></html>

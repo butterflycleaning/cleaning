@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Now · Home in Bloom</title>
+<meta name="description" content="Book your Home in Bloom cleaning in a few easy steps.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<div id="site-header"></div>
+<main id="main"><section><div class="wrap">
+  <span class="eyebrow">Book online</span><h1>Book your cleaning</h1>
+  <div id="flow">
+    <div class="progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="stepname" id="stepname" aria-live="polite"></div>
+    <div class="split">
+      <div class="card">
+        <div class="step"><h2>Choose a service</h2><div id="svcList"></div></div>
+        <div class="step"><h2>Tell us about the space</h2><div id="details"></div></div>
+        <div class="step"><h2>Pick a date &amp; time</h2>
+          <label for="date">Preferred date</label><input type="date" id="date"><div class="err" id="dateErr"></div>
+          <label for="time">Arrival window</label>
+          <select id="time"><option value="">Select…</option><option>Morning</option><option>Midday</option><option>Afternoon</option><option>Flexible</option></select><div class="err" id="timeErr"></div>
+          <label for="altDate">Backup date (optional)</label><input type="date" id="altDate">
+          <p class="note" style="margin-top:12px">We'll confirm availability by email.</p></div>
+        <div class="step"><h2>Your details</h2>
+          <label for="name">Full name</label><input id="name" autocomplete="name"><div class="err" id="nameErr"></div>
+          <div class="two"><div><label for="email">Email</label><input id="email" type="email" autocomplete="email"><div class="err" id="emailErr"></div></div>
+          <div><label for="phone">Phone (optional)</label><input id="phone" type="tel" autocomplete="tel"></div></div>
+          <label for="address">Street address</label><input id="address" autocomplete="street-address"><div class="err" id="addressErr"></div>
+          <div class="two"><div><label for="city">City / town</label><input id="city" autocomplete="address-level2"><div class="err" id="cityErr"></div></div>
+          <div><label for="zip">ZIP</label><input id="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code"><div class="err" id="zipErr"></div></div></div>
+          <label for="notes">Access, pets, special requests (optional)</label><textarea id="notes" rows="3"></textarea></div>
+        <div class="step"><h2>Review &amp; send</h2><div id="review"></div>
+          <div class="callout"><b>Payment:</b> via Venmo (<span data-venmo></span>) after we confirm your final price.</div>
+          <label class="check"><input type="checkbox" id="agree"> <span>I agree to the <a href="terms.html" target="_blank">Terms of Service</a> and understand a <b id="cancelFee"></b> fee applies if I cancel a confirmed booking.</span></label>
+          <div class="err" id="agreeErr"></div><div class="err" id="sendErr"></div></div>
+        <div class="nav"><button class="btn alt" id="back" type="button">Back</button>
+          <button class="btn" id="next" type="button">Continue</button><button class="btn" id="submit" type="button">Send booking request</button></div>
+      </div>
+      <aside class="card summary" id="summaryCol"><div id="summary"></div></aside>
+    </div>
+  </div>
+  <div id="done" class="card narrow" style="display:none"></div>
+</div></section></main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script><script src="assets/pricing.js"></script><script src="assets/layout.js"></script>
+<script src="assets/estimator-ui.js"></script><script src="assets/book.js"></script>
+<script>document.querySelector("[data-venmo]").textContent="@"+HIB.business.venmo;</script>
+</body></html>
